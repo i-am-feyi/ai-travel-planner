@@ -19,7 +19,11 @@ import { formatDistanceToNow } from "date-fns";
 import Link from "next/link";
 
 const AppPage = () => {
-  const { data: trips } = useGetTrips();
+  const { data: trips, isLoading } = useGetTrips();
+
+  if (isLoading) return <div>Loading...</div>;
+
+  if (trips?.length === 0 || !trips) return <div>No trips found</div>;
 
   console.log(trips);
 
@@ -28,7 +32,7 @@ const AppPage = () => {
       <div className="container mx-auto px-3 pt-10 mb-20">
         <h1 className="text-3xl font-semibold">My Trips</h1>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 mt-8">
-          {trips?.map((trip) => (
+          {trips.map((trip) => (
             <Card className="p-0 m-0 overflow-hidden gap-3 shadow-xs" key={trip.id}>
               <div className="relative">
                 <Carousel className="w-full">
