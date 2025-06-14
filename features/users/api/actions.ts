@@ -40,6 +40,7 @@ export async function getUserByClerkId(clerkUserId: string) {
     if (!clerkUserId) {
       throw new Error("Clerk ID is required!");
     }
+    console.log("clerkUserId", clerkUserId);
 
     const user = await prisma.user.findUnique({
       where: {
