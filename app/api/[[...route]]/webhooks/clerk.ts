@@ -1,6 +1,5 @@
 import { Hono } from "hono";
 import { Webhook } from "svix";
-import { User } from "@prisma/client";
 import { revalidatePath } from "next/cache";
 import { WebhookEvent } from "@clerk/backend";
 import { createId } from "@paralleldrive/cuid2";
@@ -10,6 +9,7 @@ import {
   getUserByClerkId,
   updateUser,
 } from "@/features/users/api/actions";
+import { User } from "@/prisma/generated/zod";
 
 const app = new Hono().post("/", async (c) => {
   const clerkSigningSecret = process.env.CLERK_WEBHOOK_SIGNING_SECRET;
