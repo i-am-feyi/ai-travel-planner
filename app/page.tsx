@@ -1,10 +1,13 @@
 import Header from "@/components/header";
-import Image from "next/image";
+import Hero from "@/components/hero";
+import ImageCTA from "@/components/image-cta";
 
 export default function HomePage() {
   return (
     <>
       <Header />
+      <Hero />
+      <ImageCTA />
     </>
   );
 }

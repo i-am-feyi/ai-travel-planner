@@ -1,15 +1,11 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Bricolage_Grotesque } from "next/font/google";
 import "./globals.css";
 import ClerkProviderWrapper from "@/providers/clerk-provider";
+import GlobalProvidersWrapper from "@/providers";
+import AppFooter from "@/components/footer";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const bricolageGrotesque = Bricolage_Grotesque({
   subsets: ["latin"],
 });
 
@@ -26,8 +22,13 @@ export default function RootLayout({
   return (
     <ClerkProviderWrapper>
       <html lang="en">
-        <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-          {children}
+        <link rel="icon" href="/logo/icon-green.svg" sizes="any" />
+
+        <body className={`${bricolageGrotesque.className} antialiased`}>
+          <GlobalProvidersWrapper>
+            {children}
+            <AppFooter />
+          </GlobalProvidersWrapper>
         </body>
       </html>
     </ClerkProviderWrapper>

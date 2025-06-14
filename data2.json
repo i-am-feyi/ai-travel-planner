@@ -1,0 +1,190 @@
+{
+  "success": true,
+  "tripImages": [
+    "https://images.unsplash.com/photo-1697528784293-8a7f70989408?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NTkxODZ8MHwxfHNlYXJjaHwxfHxGcmFuY2UlMjBsdXh1cnklMjBUcmF2ZWx8ZW58MHwwfHx8MTc0OTc2MjY0NXww&ixlib=rb-4.1.0&q=80&w=1080",
+    "https://images.unsplash.com/photo-1632052530626-b409f3e5727c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NTkxODZ8MHwxfHNlYXJjaHwyfHxGcmFuY2UlMjBsdXh1cnklMjBUcmF2ZWx8ZW58MHwwfHx8MTc0OTc2MjY0NXww&ixlib=rb-4.1.0&q=80&w=1080",
+    "https://images.unsplash.com/photo-1558451025-19eb2eb5f587?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NTkxODZ8MHwxfHNlYXJjaHwzfHxGcmFuY2UlMjBsdXh1cnklMjBUcmF2ZWx8ZW58MHwwfHx8MTc0OTc2MjY0NXww&ixlib=rb-4.1.0&q=80&w=1080"
+  ],
+  "enrichedTripData": {
+    "overview": {
+      "title": "Parisian Luxury Food & Nightlife Escape",
+      "location": "Paris, France",
+      "travelStyle": "Luxury",
+      "groupType": "Solo",
+      "interests": ["Food & Culinary", "Nightlife & Bars", "City"],
+      "budget": "Premium",
+      "numberOfDays": 2,
+      "description": [
+        "Paris, the capital of France, is a global center for art, fashion, gastronomy, and culture. Its 19th-century cityscape is crisscrossed by wide boulevards and the River Seine. Beyond such landmarks as the Eiffel Tower and the Arc de Triomphe, the city is known for its museums, including the Louvre, and its high-end boutiques.",
+        "This 2-day luxury solo trip to Paris is designed to immerse you in the best of French cuisine and vibrant nightlife. From Michelin-starred dining experiences to exclusive cocktail bars, every moment is crafted for indulgence. You'll explore iconic landmarks while enjoying VIP access and personalized service.",
+        "Highlights include a private food tour of Le Marais, a champagne tasting at a prestigious cellar, and a late-night jazz performance in Saint-Germain-des-Prés. This itinerary balances cultural exploration with sophisticated entertainment, ensuring an unforgettable Parisian adventure."
+      ],
+      "estimatedTotalPrice": 5000,
+      "bestTimeToVisit": {
+        "Spring": "April to May (pleasant weather, blooming gardens)",
+        "Summer": "June to August (warmest weather, outdoor events)",
+        "Autumn": "September to October (mild weather, beautiful foliage)",
+        "Winter": "November to March (coldest weather, Christmas markets)"
+      },
+      "weatherInfo": {
+        "Spring": "10-20°C (50-68°F)",
+        "Summer": "20-30°C (68-86°F)",
+        "Autumn": "10-20°C (50-68°F)",
+        "Winter": "2-8°C (36-46°F)"
+      },
+      "generalLocation": {
+        "city or region name": "Paris",
+        "coordinates": {
+          "latitude": 48.8566,
+          "longitude": 2.3522
+        },
+        "openStreetMap link": "https://www.openstreetmap.org/?mlat=48.8566&mlon=2.3522#map=12/48.8566/2.3522"
+      }
+    },
+    "hotels": [
+      {
+        "hotelName": "Le Bristol Paris",
+        "address": "112 Rue du Faubourg Saint-Honoré, 75008 Paris, France",
+        "estimatedPricePerNight": 1500,
+        "latitiude": 48.8726,
+        "longitude": 2.3147995999999997,
+        "rating": 4.7,
+        "description": "An iconic palace hotel with a rooftop pool, exquisite dining, and luxurious rooms.",
+        "imageUrl": "https://places.googleapis.com/v1/places/ChIJVeUHqupv5kcR4taEicvH7ww/photos/AXQCQNS9Wj8QghvkdgJd-TKF-JkoP85ypRp4yLW9P7GOeVnHlF26aSQJTG8f4FIZn-Xa0Wrn0ZZrYFflPg0_1CgVs1wzXSR74fPijrM4FFupYJ3NefQa1RfLWMdruBU3ySdPcWhuz0xZH6d1r_c3jsaVKVoZEWeZevQckyh-f0jwPduSa7sHCSbLhuC-wAB1GSqU2Sdq4cp2ls5KVuOxr4RjgbCkxNrmY2GTb6SMFT-IyLauIM-kjmAKzTVcPEXn9hD2G6Vhxcr1csV6-4BZf7mdwdgY1mwseuJytoyj7eNw_uuXow/media?maxHeightPx=1000&maxWidthPx=1900&key=AIzaSyBjVEiaV7gMxGpYblLAHdyB56d7pQef8xQ",
+        "latitude": 48.871686399999994
+      },
+      {
+        "hotelName": "Four Seasons Hotel George V, Paris",
+        "address": "31 Av. George V, 75008 Paris, France",
+        "estimatedPricePerNight": 1800,
+        "latitiude": 48.8707,
+        "longitude": 2.3008389,
+        "rating": 4.8,
+        "description": "Known for its stunning floral arrangements, exceptional service, and Michelin-starred restaurants.",
+        "imageUrl": "https://places.googleapis.com/v1/places/ChIJAcNYmcJv5kcR7EQ_IeMZp8c/photos/AXQCQNQhXPa-LZPutaVZvzWznQJsAEDC6ZHM4M3WamSA07U5j_vk-W8LM31IIU-ZgD4T_OqZuH19-NpydetQulSyZM7lkWrXaSq0Lq2IGCU3vv1weOFmPAPqlaWsawf5N1dDZDjhXUCswCKNPVONAWSj-LIbYWQ8uiQwmJ1FtWl-u-h8RCVLX4j5x_rdfNKB8s2jf5fP4KbG0EcbjXUeDrkR5Tl73trAIppLCCkT38dKIcOa7OvkbAkYIco1DBdxISfuqw06MvHP9Wbhiba-WYGvcEDDNYXruZoBYSKKskp0gzGugw/media?maxHeightPx=1000&maxWidthPx=1900&key=AIzaSyBjVEiaV7gMxGpYblLAHdyB56d7pQef8xQ",
+        "latitude": 48.8687444
+      },
+      {
+        "hotelName": "The Peninsula Paris",
+        "address": "19 Av. Kléber, 75116 Paris, France",
+        "estimatedPricePerNight": 1600,
+        "latitiude": 48.867,
+        "longitude": 2.293689,
+        "rating": 4.7,
+        "description": "Offers panoramic city views, a rooftop restaurant, and contemporary luxury.",
+        "imageUrl": "https://places.googleapis.com/v1/places/ChIJjYzV7O5v5kcRCKONjpjWenU/photos/AXQCQNRiXUaTDeIO-lwTOi5fKjFp1Hrv_yRQvpTXOvvTwj3VWF6Qnj_CBL-Rgyjb630hEoBsjPba-IpnXoVCnBqV_xm2j-KBpsyk-bgPWApFrKxXXYszzq6cTmoA-zhN_WRvyANJJDqup9yNGA0b6NO0UfbmaJzEnKhhvDNVg6BWJzFGq0tK7MDU4oOpdR2vkISKQZcxpQx5HFaPCjU2OI4bkvG1NuL2N8y__k61ZguC9Nj8Y3kE24QHI-1slV8Xks9sGjA2gqsDvBxeaCJ_zbgJmHLjm8Xa8hGUoZS4Hc7MF8o/media?maxHeightPx=1000&maxWidthPx=1900&key=AIzaSyBjVEiaV7gMxGpYblLAHdyB56d7pQef8xQ",
+        "latitude": 48.871018199999995
+      }
+    ],
+    "itinerary": [
+      {
+        "day": 1,
+        "location": "Paris",
+        "activities": [
+          {
+            "placeName": "Private Food Tour in Le Marais",
+            "placeDetails": "Explore the historic Le Marais district with a private guide, sampling artisanal cheeses, pastries, and other local delicacies.",
+            "latitiude": 48.8578,
+            "longitude": 2.336619,
+            "ticketPrice": 300,
+            "rating": 4.8,
+            "timeOfDay": "Morning",
+            "estimatedTravelTime": 0,
+            "imageUrl": "https://places.googleapis.com/v1/places/ChIJnUDnBCVu5kcRUYvdrkoWGOk/photos/AXQCQNQJefiTp7rgOd3JBwElOzzn3RXdLc9wJPBqWre5bCoKhZzNZDkEgwklHqzxM45tfUUkxwcEPhaEuSh9D6BmwY8AmLPw60wrDlJIUhZVV4SKbltBq11YMRknjRvHZSKVcy_xw8_arflS-VwUPGRr6WCkwC7FmiEhm-mA0h1nvxdUOUIgt_OkZGzLz5ce3v-1dKNqAP0D9WBtE4cF2LYACeRnLt8-gBPhovSLYyVA4H0micq5-rS3U8pu_bzqIuCwfdpDovANwDpeGXsf-a2ytv1Gt6M9JZF4bmWANE7_UulkdQ/media?maxHeightPx=1000&maxWidthPx=1900&key=AIzaSyBjVEiaV7gMxGpYblLAHdyB56d7pQef8xQ",
+            "latitude": 48.8649396
+          },
+          {
+            "placeName": "Visit Musée du Louvre (VIP Access)",
+            "placeDetails": "Enjoy skip-the-line access to the Louvre Museum, focusing on key masterpieces like the Mona Lisa and Venus de Milo. Arrange a private tour or pre-booked, smaller group tour for a more personalized experience.",
+            "latitiude": 48.8606,
+            "longitude": 2.337644,
+            "ticketPrice": 50,
+            "rating": 4.7,
+            "timeOfDay": "Afternoon",
+            "estimatedTravelTime": 20,
+            "imageUrl": "https://places.googleapis.com/v1/places/ChIJD3uTd9hx5kcR1IQvGfr8dbk/photos/AXQCQNSM7RMEhe_mNMAsLYPitysCHv3Xp13MJThKPpbxzVWznbcMj_ozzWVXcjPofnYJMxqKSGlLtwGi7aLncCTHL60Ft6A3XzQZTgo-LXnM1ftU4G5H2c7TnHCS8b_6Qicvus7FqeukH3WfaRkksAZz5T4VgvpXWjzVPTFjR4WG0mG484cg_kFHM8AXLzkb_1z2scge_IwUnK7u2xAPCbsxr_dcl_t5_VH6dtKD08ajVa3WyqGbrsK9ycnPctPWWxncOm4K2hyCUB_2N0_sw69Co5C6s8z0NQtaIINIiI2eqid9tW-YdyqVxo3OQoM9I5dqrZ4X-sh7zKZMOjPCAQz4sivXjQnDOA-QDr_yx0xOFKoAenSZMss_8YXV5pcaZc6P9Wa4HWyM2gtSGcYWq80pLSMSe-Tg-VBxkUjeVByY59AABg/media?maxHeightPx=1000&maxWidthPx=1900&key=AIzaSyBjVEiaV7gMxGpYblLAHdyB56d7pQef8xQ",
+            "latitude": 48.8606111
+          },
+          {
+            "placeName": "Dinner at L'Ambroisie",
+            "placeDetails": "Indulge in a Michelin-starred dining experience at L'Ambroisie, known for its classic French cuisine and elegant ambiance. Make a reservation well in advance.",
+            "latitiude": 48.8574,
+            "longitude": 2.3643541,
+            "ticketPrice": 400,
+            "rating": 4.5,
+            "timeOfDay": "Evening",
+            "estimatedTravelTime": 20,
+            "imageUrl": "https://places.googleapis.com/v1/places/ChIJK-TZ1v9x5kcRvQoSvNJ21Vo/photos/AXQCQNS4wyN7fbKozKtIL9j07ylaZJOHG-WcHWDSMC6Bv3y9v_iGMy6VT9riOu5EObd-MwxeqrQVvMmpCDWsta6f8IewceKvkz2GN3dpnOpiuQUtX57owomIjVgR0rgJqOIYGYlg87A6oKQQNrNHmYW13WNOzsw_vzK4KLM1UqussMyzZBs9D9qt-KCdW2bc5TSUNe3BmkfhhxcXoPWZUFz5J_22fmpBsah6DRiNJgU6ooG29FM3Tar28KyUkYdAXTKEUROHidYwz4Tp5l9Ao5knZm5eBnLAYSwxZeq5ANZaHHVVSg/media?maxHeightPx=1000&maxWidthPx=1900&key=AIzaSyBjVEiaV7gMxGpYblLAHdyB56d7pQef8xQ",
+            "latitude": 48.8553396
+          },
+          {
+            "placeName": "Le Bar 228 at Le Meurice",
+            "placeDetails": "Enjoy live jazz music and cocktails at this sophisticated bar in the Le Meurice hotel.",
+            "latitiude": 48.8654,
+            "longitude": 2.3281373999999997,
+            "ticketPrice": 50,
+            "rating": 4.4,
+            "timeOfDay": "Night",
+            "estimatedTravelTime": 15,
+            "imageUrl": "https://places.googleapis.com/v1/places/ChIJpZXu3i1u5kcRidACoPLI1g4/photos/AXQCQNSM3UzoeR7B0Nl8qekqnKiNdFSbjJLP6dv7hIXndz6iaAsyaJq7QQv98_FIBIONHDion4Rxf2gkwoO8aYue1_lVtuNCUzbfvCAiQ3yJ1dUm0NJkArJ1oPz8U0BfIrwcOnCk7939mgvlc_ERyHohuge4SUc6RHnBL2e0Ws6HGq2RKdyoNl97teQTg0NUV8He7Fvl4_w3eiztL4P32hQiocTOfZTt4XoQRN-P_qSR5MFVXRn4Z40adrx9kNxs1gKVrltlvWZ4OTlQ907j193cfwYZnQRTshF1nDCqdBYPtJZgbQ/media?maxHeightPx=1000&maxWidthPx=1900&key=AIzaSyBjVEiaV7gMxGpYblLAHdyB56d7pQef8xQ",
+            "latitude": 48.865332599999995
+          }
+        ]
+      },
+      {
+        "day": 2,
+        "location": "Paris",
+        "activities": [
+          {
+            "placeName": "Champagne Tasting at Les Caves du Louvre",
+            "placeDetails": "Embark on a guided tour and champagne tasting experience at the historic wine cellars, Les Caves du Louvre.",
+            "latitiude": 48.8581,
+            "longitude": 2.3426538999999997,
+            "ticketPrice": 100,
+            "rating": 4.6,
+            "timeOfDay": "Morning",
+            "estimatedTravelTime": 20,
+            "imageUrl": "https://places.googleapis.com/v1/places/ChIJKTbqhSFu5kcRjADy2xG34nw/photos/AXQCQNSqPF79h4X4REmEtimOZ1wl-F03-EKylpg7rgIxpv8nic5XSz_JyCbfO8-mInYCzJEA8WcpQ41MeNV6Sx17HYOLFee51YB9Ol8soUufviDx9_w2N4DDKFWJLstOro0DRs-xiiVXP0afPqpPAi7ZAdKnFo5CAdlwv0DxnvjhdvvGd_V3fQ6b91a7Mf8I5MhnhYEhlM0YOcUZZ4lCETuLtQ1Xbhbn4Rgx4tSFONBc94ldRwu6MZViYS-4AhOEVOKtWwXCRCbPVaP87sh3qfTypOlLnbgl1bLP_xX21xUrHv1X0qzRBPk-UNHewsFCy3HWNvL__x4Xg3O1PzCa5sCaQb4E5FtxL6vUv9ewHLSEQsGDnt4DKrvt8RrORczmZF6JjsAfcxEG0cS6ruxMwreEP3-bEGctgA6qzc3y8bzptCOm-Q/media?maxHeightPx=1000&maxWidthPx=1900&key=AIzaSyBjVEiaV7gMxGpYblLAHdyB56d7pQef8xQ",
+            "latitude": 48.8609618
+          },
+          {
+            "placeName": "Shopping at Avenue Montaigne",
+            "placeDetails": "Explore high-end boutiques and flagship stores on Avenue Montaigne, known for its luxury fashion brands.",
+            "latitiude": 48.8678,
+            "longitude": 2.3062649,
+            "ticketPrice": 0,
+            "rating": 4.4,
+            "timeOfDay": "Afternoon",
+            "estimatedTravelTime": 15,
+            "imageUrl": "https://places.googleapis.com/v1/places/ChIJU0nn0uZv5kcRbncuncHdnXE/photos/AXQCQNTJTbQyJq5vfM896E-oHsI36w7OsSqQ4D1SZmpopdq1vZB83bxCLVmazzLj0JLXrhMtKisratNVN8P4_JWmlcJ1c1-MtJJ5o3yJGrw_H0KXFkEx3mzTdjmaSMV8Ckv-j9MBu0J3w7hbyUrXuNvJucPIm18opVlM-Bq5vbGci-LorMFIJbFwW2i4w5O1ybjT-fP62kZDRjZ4FlVbSv_6h9NkuIH6wcwsqkF7zXdbvuvfGjaIBjzEe0vmtrKK-AWuFo-WhX4lGA5odWGDX-JGxjSe8hI2_r5H9-ejxwDuc9G0VA/media?maxHeightPx=1000&maxWidthPx=1900&key=AIzaSyBjVEiaV7gMxGpYblLAHdyB56d7pQef8xQ",
+            "latitude": 48.8706988
+          },
+          {
+            "placeName": "Dinner at Epicure",
+            "placeDetails": "Savor a three-Michelin-starred dining experience at Epicure in Le Bristol Paris, offering refined French cuisine.",
+            "latitiude": 48.8726,
+            "longitude": 2.3148527999999997,
+            "ticketPrice": 500,
+            "rating": 4.7,
+            "timeOfDay": "Evening",
+            "estimatedTravelTime": 20,
+            "imageUrl": "https://places.googleapis.com/v1/places/ChIJVeUHqupv5kcRDHPinmB3LtU/photos/AXQCQNTyZosxI94s20NntYKFVavv2rtizym33jVPGccdprDx1tgtQyE2u510I1EeM_4Q-ACcHD3OgsKKqN2iRGRRKMnYSmoENuSS3pDhR5tWtErkKo4jwEVkiCouUPyZo8QfdE-jO0qBoHgGwulhwY8LsXLCvhPU7mBtG9-Me9_EARXeKsqjHvYGRJQO7EGgFZdBxsbCeUMtC6NCXUzzU0hwQM2EDOzfPwtM5npXjgG-xiImS2YV5Slr96ciDhicpUHzPiGJcovAEFpMuWrKF9bkpLMV5jv_mElK0WBxFKClb8i3qQ/media?maxHeightPx=1000&maxWidthPx=1900&key=AIzaSyBjVEiaV7gMxGpYblLAHdyB56d7pQef8xQ",
+            "latitude": 48.8717373
+          },
+          {
+            "placeName": "Jazz Club in Saint-Germain-des-Prés",
+            "placeDetails": "Experience a live jazz performance at a classic jazz club in the Saint-Germain-des-Prés neighborhood. Consider New Morning or Le Caveau de la Huchette.",
+            "latitiude": 48.8543,
+            "longitude": 2.3335089,
+            "ticketPrice": 30,
+            "rating": 4.6,
+            "timeOfDay": "Night",
+            "estimatedTravelTime": 25,
+            "imageUrl": "https://places.googleapis.com/v1/places/ChIJRTLuHthx5kcRZhnmhOIE-lY/photos/AXQCQNTGVUp1U7zNArMYittSqIOhplVD0lA2qVGP6i8fmKxcwnITsWs9RieZMa3sWmUHQDUSbEa4i_nLCSN4Rg0jlrDd1uFEcTgoSXqll6jhQTnBIXwQeGyGD3-tzfh5vIZZ5qqsk1OeR3dt1b03QG3O99v1ECvufpYvD4GSat73-FV8V_ABlmt2vYiCbg2JwuwZGIcBUEHVApfcPKc5KUZNY-556c-E50pffrddJ-WeMaJ0rmGgcgAlmJAdB1zpk3emq6RoXXHp83sM_CY5EScq9Fmp8me4lznf2NTcZvly_jC8gA/media?maxHeightPx=1000&maxWidthPx=1900&key=AIzaSyBjVEiaV7gMxGpYblLAHdyB56d7pQef8xQ",
+            "latitude": 48.8553796
+          }
+        ]
+      }
+    ]
+  }
+}
