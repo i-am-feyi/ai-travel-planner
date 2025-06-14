@@ -27,8 +27,8 @@ export const useCreateTripStore = create<CreateTripState>((set) => ({
   formData: {
     destination: "",
     groupType: "1 person",
-    duration: "",
-    travelStyle: "adventure",
+    duration: 3,
+    travelStyle: "Adventure",
     interests: [],
     budget: "Cheap",
   },
