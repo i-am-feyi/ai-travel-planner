@@ -100,7 +100,7 @@ const ViewTripRoute = (props: { params: Params }) => {
         <div className="mt-16 flex flex-col gap-6">
           <h2 className="text-2xl font-semibold">About The Destination</h2>
           <div className="max-w-4xl flex flex-col gap-4 text-md text-black/80">
-            {data.description.map((desc, index) => (
+            {data.description.map((desc: string, index) => (
               <p key={index}>{desc}</p>
             ))}
           </div>
