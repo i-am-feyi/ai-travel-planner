@@ -48,6 +48,7 @@ export async function getUserByClerkId(clerkUserId: string) {
     });
     return { user };
   } catch (error) {
+    console.log(error);
     throw new Error("Unable to fetch user with clerkId");
   }
 }
