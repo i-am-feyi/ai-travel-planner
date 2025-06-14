@@ -11,6 +11,9 @@
     "schema:generate": "prisma generate",
     "db:push": "prisma db push"
   },
+  "pnpm": {
+    "neverBuiltDependencies": []
+  },
   "dependencies": {
     "@clerk/backend": "^1.29.1",
     "@clerk/nextjs": "^6.16.0",
