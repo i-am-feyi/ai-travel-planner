@@ -1,5 +1,5 @@
-import { User } from "@prisma/client";
 import { prisma } from "@/lib/prisma";
+import { User } from "@/prisma/generated/zod";
 
 export async function createUser(data: User) {
   try {
