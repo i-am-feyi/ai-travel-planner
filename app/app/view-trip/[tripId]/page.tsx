@@ -13,7 +13,6 @@ import {
 import React, { use } from "react";
 import { cn, formatCurrency } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
-import { tripTestData } from "@/constants/test-data";
 import Image from "next/image";
 import Link from "next/link";
 import {
@@ -264,9 +263,8 @@ const ViewTripRoute = (props: { params: Params }) => {
                                       href={
                                         "https://www.google.com/maps/search/?api=1&query=" +
                                         placeName +
-                                        "," +
-                                        tripTestData.enrichedTripData.overview
-                                          .generalLocation.cityOrRegionName
+                                        ", " +
+                                        data.location
                                       }
                                     >
                                       View Details
