@@ -2,7 +2,7 @@ import { Button } from "./ui/button";
 
 const ImageCTA = () => {
   return (
-    <section className="mt-20">
+    <section className="mt-20 px-3">
       <div className="max-w-6xl mx-auto">
         <div className="relative w-full rounded-4xl h-[654px] flex flex-col justify-end p-10 bg-[url('/travel-scene.jpg')] bg-cover ">
           <div className="absolute inset-0 rounded-4xl bg-gradient-to-t from-black via-transparent to-transparent opacity-60" />
