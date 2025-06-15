@@ -1,5 +1,6 @@
 "use client";
 
+import TetrisLoader from "@/components/tetris-loader/loader";
 import { Button } from "@/components/ui/button";
 import React from "react";
 import { toast } from "sonner";
@@ -17,6 +18,7 @@ const TestPage = () => {
     <div>
       <div>Test Page</div>
       <Button onClick={handleClick}>Click me</Button>
+      <TetrisLoader />
     </div>
   );
 };

@@ -23,7 +23,7 @@ const CreateTripForm = () => {
     mode: "onTouched",
   });
 
-  const { currentStep, setCurrentStep, steps } = useCreateTripStore();
+  const { currentStep, setCurrentStep, steps, setIsSubmitted } = useCreateTripStore();
   const isLast = currentStep === steps.length;
   const budget = methods.watch("budget");
 
@@ -43,7 +43,10 @@ const CreateTripForm = () => {
   };
 
   const onSubmit = methods.handleSubmit((data) => {
-    // send to server…
+    // Set isSubmitted to true
+    setIsSubmitted(true);
+
+    // Send details to server
     createTrip({
       budget: data.budget,
       groupType: data.groupType,
@@ -84,6 +87,7 @@ const CreateTripForm = () => {
                 size="lg"
                 // Only show submit button when budget is selected in last step
                 className={cn(!budget && "hidden")}
+                disabled={isPending}
               >
                 Create Trip <Wand />
               </Button>

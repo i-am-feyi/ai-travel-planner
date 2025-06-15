@@ -18,6 +18,8 @@ interface CreateTripState {
   steps: Step[];
   setCurrentStep: (step: number) => void;
   formData: FormSchema;
+  isSubmitted: boolean;
+  setIsSubmitted: (isSubmitted: boolean) => void;
 }
 
 export const useCreateTripStore = create<CreateTripState>((set) => ({
@@ -32,4 +34,6 @@ export const useCreateTripStore = create<CreateTripState>((set) => ({
     interests: [],
     budget: "Cheap",
   },
+  isSubmitted: false,
+  setIsSubmitted: (isSubmitted) => set({ isSubmitted }),
 }));

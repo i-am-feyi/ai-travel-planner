@@ -3,6 +3,7 @@ import { CheckCircle2 } from "lucide-react";
 import Image from "next/image";
 import React from "react";
 import { useCreateTripStore } from "../../stores/create-trip-store";
+import Link from "next/link";
 
 const CreateTripSidebar = () => {
   const { currentStep, steps } = useCreateTripStore();
@@ -11,7 +12,9 @@ const CreateTripSidebar = () => {
     <div className="hidden md:flex md:w-2/6 md:max-w-sm bg-muted/70 px-10 pt-8 pb-16">
       <div className="flex flex-col gap-4">
         <div>
-          <Image src="/logo/logo-green.svg" alt="Talia" width={150} height={100} />
+          <Link href="/">
+            <Image src="/logo/logo-green.svg" alt="Talia" width={150} height={100} />
+          </Link>
           <p className="text-sm text-muted-foreground mt-1">
             Create and plan your next trip with Talia.
           </p>
