@@ -24,7 +24,7 @@ export const useCreateTripAPI = () => {
     },
     onMutate: () => {
       const toastId = toast.loading("Generating trip...");
-      return { toastId: String(toastId) };
+      return { toastId: toastId };
     },
     onSuccess: (data, variables, context: any) => {
       toast.dismiss(context?.toastId);

@@ -7,6 +7,9 @@ export default function HomePage() {
     <section className="pb-20">
       <Header />
       <Hero />
+      {/* <div className="h-40 flex justify-center items-center">
+        <TetrisLoader />
+      </div> */}
       <RecentTrips />
     </section>
   );
