@@ -23,15 +23,21 @@ export const useCreateTripAPI = () => {
       return await response.json();
     },
     onMutate: () => {
-      toast.loading("Generating trip...");
+      const toastId = toast.loading("Generating trip...");
+      return { toastId: String(toastId) };
     },
-    onSuccess: (response: ResponseType, request: RequestType) => {
-      toast.success("Trip Created ✅");
+    onSuccess: (data, variables, context: any) => {
+      toast.dismiss(context?.toastId);
+      toast.success("Trip created successfully!");
       queryClient.invalidateQueries({ queryKey: ["trips"] });
-      router.push(`/app/view-trip/${response.tripId}`);
+      router.push(`/app/view-trip/${data.tripId}`);
     },
-    onError: () => {
-      toast.error("Failed to generate trip");
+    onError: (error, variables, context: any) => {
+      toast.dismiss(context?.toastId);
+      toast.error("Failed to create trip");
+    },
+    onSettled: (data, error, variables, context: any) => {
+      toast.dismiss(context?.toastId);
     },
   });
 

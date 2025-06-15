@@ -21,9 +21,13 @@ import Link from "next/link";
 const AppPage = () => {
   const { data: trips, isLoading } = useGetTrips();
 
-  if (isLoading) return <div>Loading...</div>;
+  if (isLoading)
+    return <div className="min-h-dvh flex items-center justify-center">Loading...</div>;
 
-  if (trips?.length === 0 || !trips) return <div>No trips found</div>;
+  if (trips?.length === 0 || !trips)
+    return (
+      <div className="min-h-dvh flex items-center justify-center">No trips found</div>
+    );
 
   return (
     <section className="min-h-dvh">

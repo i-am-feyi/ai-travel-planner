@@ -27,7 +27,6 @@ export default function RootLayout({
 
         <body className={`${bricolageGrotesque.className} antialiased`}>
           <GlobalProvidersWrapper>
-            <Header />
             {children}
             {/* <AppFooter /> */}
           </GlobalProvidersWrapper>

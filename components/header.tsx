@@ -34,7 +34,7 @@ const Header = () => {
               className="rounded-full h-10 border border-green-700 text-green-700 hover:bg-green-700 hover:text-white"
               asChild
             >
-              <Link href="/app">
+              <Link href="/app/create-trip">
                 <span className="font-bold text-md">Create a trip</span>
               </Link>
             </Button>

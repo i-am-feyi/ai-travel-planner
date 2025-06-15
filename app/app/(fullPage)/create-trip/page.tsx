@@ -11,7 +11,7 @@ const CreateTripRoute = () => {
       <div className="flex h-full min-h-screen">
         <CreateTripSidebar />
         <div className="flex-1 flex flex-col items-center px-8 pt-20">
-          <div className="max-w-xl mx-auto w-full flex flex-col">
+          <div className="max-w-xl mx-auto w-full flex flex-col max-sm:pt-10">
             <Image
               src="/logo/icon-green.svg"
               alt="Talia"
