@@ -68,7 +68,7 @@ const RecentTrips = () => {
                         </Link>
                       </div>
                       <div className="mt-2 flex gap-2 md:gap-3 items-center flex-wrap">
-                        <div className="flex gap-2">
+                        <div className="flex gap-2 flex-wrap">
                           <Badge
                             variant="outline"
                             className="px-2 py-1 text-sm font-medium"
@@ -84,7 +84,7 @@ const RecentTrips = () => {
                             {trip.style}
                           </Badge>
                         </div>
-                        <div className="flex gap-2">
+                        <div className="flex gap-2 flex-wrap">
                           <Badge
                             className="text-green-700 px-2 py-1 text-sm font-medium"
                             variant="outline"
