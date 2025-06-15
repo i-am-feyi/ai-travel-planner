@@ -6,6 +6,7 @@ import CreateTripSidebar from "@/features/trip/components/create-trip/create-tri
 import { useCreateTripStore } from "@/features/trip/stores/create-trip-store";
 
 import Image from "next/image";
+import Link from "next/link";
 
 const CreateTripRoute = () => {
   const { isSubmitted } = useCreateTripStore();
@@ -26,13 +27,15 @@ const CreateTripRoute = () => {
             </div>
           ) : (
             <div className="max-w-xl mx-auto w-full flex flex-col max-sm:pt-10">
-              <Image
-                src="/logo/icon-green.svg"
-                alt="Talia"
-                width={400}
-                height={400}
-                className="size-16 mb-10"
-              />
+              <Link href="/">
+                <Image
+                  src="/logo/icon-green.svg"
+                  alt="Talia"
+                  width={400}
+                  height={400}
+                  className="size-16 mb-10"
+                />
+              </Link>
 
               <CreateTripForm />
             </div>
