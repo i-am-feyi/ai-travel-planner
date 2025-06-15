@@ -7,7 +7,11 @@ export default function Page() {
         layout: {
           unsafe_disableDevelopmentModeWarnings: true,
         },
+        elements: {
+          header: "hidden",
+        },
       }}
+      fallbackRedirectUrl="/app"
     />
   );
 }

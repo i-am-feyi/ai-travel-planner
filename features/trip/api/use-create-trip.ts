@@ -24,8 +24,6 @@ export async function generateTripFromGemini(input: {
       .replace(/```$/, "")
       .trim();
 
-    console.log(cleaned);
-
     const json = JSON.parse(cleaned);
     return json;
   } catch (err) {

@@ -43,8 +43,6 @@ const CreateTripForm = () => {
   };
 
   const onSubmit = methods.handleSubmit((data) => {
-    console.log("submited all data", data);
-
     // send to server…
     createTrip({
       budget: data.budget,

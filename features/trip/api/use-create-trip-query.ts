@@ -26,8 +26,6 @@ export const useCreateTripAPI = () => {
       toast.loading("Generating trip...");
     },
     onSuccess: (response: ResponseType, request: RequestType) => {
-      console.log("OnSuccess Response:", response);
-      console.log("OnSuccess Request:", request);
       toast.success("Trip Created ✅");
       queryClient.invalidateQueries({ queryKey: ["trips"] });
       router.push(`/app/view-trip/${response.tripId}`);

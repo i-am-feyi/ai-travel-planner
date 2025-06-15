@@ -25,8 +25,6 @@ const AppPage = () => {
 
   if (trips?.length === 0 || !trips) return <div>No trips found</div>;
 
-  console.log(trips);
-
   return (
     <section className="min-h-dvh">
       <div className="container mx-auto px-3 pt-10 mb-20">

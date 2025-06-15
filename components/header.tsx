@@ -3,7 +3,7 @@
 import { Button } from "./ui/button";
 import Link from "next/link";
 import Image from "next/image";
-import { SignedIn, UserButton } from "@clerk/nextjs";
+import { SignedIn, SignedOut, UserButton } from "@clerk/nextjs";
 
 const Header = () => {
   return (
@@ -15,6 +15,13 @@ const Header = () => {
           </Link>
 
           <div className="flex items-center gap-2">
+            <SignedOut>
+              <Button className="rounded-full h-10" variant="outline" asChild>
+                <Link href="/sign-in">
+                  <span className="font-bold text-md">Sign in</span>
+                </Link>
+              </Button>
+            </SignedOut>
             <SignedIn>
               <Button className="rounded-full h-10" variant="outline" asChild>
                 <Link href="/app">

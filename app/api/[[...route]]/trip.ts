@@ -43,7 +43,6 @@ const app = new Hono()
     // 3. Fetch Google Place Images for Hotels + Activities
     const enrichedTripData: EnrichedTripData =
       await fetchGoogleImagesForHotelsAndActivities(baseTripData);
-    console.log(enrichedTripData);
 
     // 4. Store All to DB
     const saveTripToDB = await prisma.trip.create({

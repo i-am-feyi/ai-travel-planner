@@ -55,8 +55,6 @@ const ViewTripRoute = (props: { params: Params }) => {
     return <div>Trip not found</div>;
   }
 
-  console.log(data);
-
   return (
     <section>
       <ShareTripModal link={currentUrl} />
