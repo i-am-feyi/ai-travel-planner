@@ -12,4 +12,6 @@ const ZPiece = forwardRef<HTMLDivElement, { className?: string }>(
   }
 );
 
+ZPiece.displayName = "ZPiece";
+
 export default motion(ZPiece);

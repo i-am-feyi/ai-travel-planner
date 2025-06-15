@@ -14,4 +14,6 @@ const TPiece = forwardRef<HTMLDivElement, { className?: string }>(
   }
 );
 
+TPiece.displayName = "TPiece";
+
 export default motion(TPiece);

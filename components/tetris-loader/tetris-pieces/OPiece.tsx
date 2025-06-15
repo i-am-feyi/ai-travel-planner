@@ -13,4 +13,6 @@ const OPiece = forwardRef<HTMLDivElement, { className?: string }>(
   }
 );
 
+OPiece.displayName = "OPiece";
+
 export default motion(OPiece);

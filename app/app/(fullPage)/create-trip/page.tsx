@@ -21,7 +21,7 @@ const CreateTripRoute = () => {
               <div className="flex flex-col items-center justify-center -mt-60">
                 <TetrisLoader />
                 <p className="max-w-xs mx-auto text-center -mt-24 text-2xl">
-                  Hang on tight! <br /> we're creating your trip...
+                  Hang on tight! <br /> we&apos;re creating your trip...
                 </p>
               </div>
             </div>

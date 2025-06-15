@@ -13,4 +13,6 @@ const IPiece = forwardRef<HTMLDivElement, { className?: string }>(
   }
 );
 
+IPiece.displayName = "IPiece";
+
 export default motion(IPiece);

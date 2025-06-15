@@ -14,4 +14,5 @@ const JPiece = forwardRef<HTMLDivElement, { className?: string }>(
   }
 );
 
+JPiece.displayName = "JPiece";
 export default motion(JPiece);

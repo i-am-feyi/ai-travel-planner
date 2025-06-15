@@ -14,4 +14,6 @@ const SPiece = forwardRef<HTMLDivElement, { className?: string }>(
   }
 );
 
+SPiece.displayName = "SPiece";
+
 export default motion(SPiece);

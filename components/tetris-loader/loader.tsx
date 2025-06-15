@@ -65,11 +65,11 @@ const TetrisLoader = () => {
         [".iPiece-2", { x: (3 + 6) * 15 }],
         [".iPiece-2", { y: (1 + 7) * 15 }],
       ];
-      // @ts-ignore
+      // @ts-expect-error - Framer Motion types are not compatible with the latest version
       animate(sequence, { duration: 3.5, repeat: Infinity, repeatDelay: 1 });
     };
     animateLoader();
-  }, []);
+  }, [animate]);
 
   return (
     <div ref={scope}>
