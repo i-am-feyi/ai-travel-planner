@@ -19,6 +19,42 @@ const TripInputSchema = z.object({
 });
 
 const app = new Hono()
+  .get("/recent", async (c) => {
+    const recentTrips = await prisma.trip.findMany({
+      orderBy: {
+        createdAt: "desc",
+      },
+      take: 4,
+      select: {
+        id: true,
+        title: true,
+        location: true,
+        travelGroup: true,
+        style: true,
+        duration: true,
+        estimatedTotal: true,
+        createdAt: true,
+        tripImages: {
+          select: {
+            id: true,
+            ImageUrl: true,
+          },
+        },
+        user: {
+          select: {
+            fullName: true,
+            profileImageUrl: true,
+          },
+        },
+      },
+    });
+
+    if (!recentTrips || recentTrips.length === 0) {
+      return c.json({ error: "No trips found" }, 404);
+    }
+
+    return c.json(recentTrips, 200);
+  })
   .post("/", clerkMiddleware(), zValidator("json", TripInputSchema), async (c) => {
     const auth = getAuth(c);
     const values = c.req.valid("json");

@@ -34,6 +34,11 @@ const nextConfig: NextConfig = {
         hostname: "places.googleapis.com",
         port: "",
       },
+      {
+        protocol: "https",
+        hostname: "img.clerk.com",
+        port: "",
+      },
     ],
   },
 };

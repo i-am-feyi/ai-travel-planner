@@ -5,15 +5,14 @@ import Link from "next/link";
 const Hero = () => {
   return (
     <section>
-      <div className="section-container flex justify-center items-center px-3">
+      <div className="section-container flex justify-center items-center px-3 pb-40">
         <div className="mt-32">
           <h1 className="font-bold text-5xl md:text-6xl max-w-2xl mx-auto text-center px-2">
-            Hey, I&apos;m Talia your personal trip planner
+            Hey, I&apos;m Talia your AI travel planner
           </h1>
           <p className="max-w-xl mx-auto text-center text-xl mt-6 text-black/80">
-            Let me handle the travel planning – right from the start to stays and
-            stress-free itineraries. Think of me as your travel-savvy friend who knows
-            exactly what you need.
+            Let me handle the travel planning – right from the hotels to stress-free
+            itineraries.
           </p>
           <div className="flex justify-center">
             <Button

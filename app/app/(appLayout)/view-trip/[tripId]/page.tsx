@@ -162,7 +162,7 @@ const ViewTripRoute = (props: { params: Params }) => {
                       </span>
                     </div>
                     <div className="mt-3">
-                      <Button className="bg-green-600 hover:bg-green-600/80" asChild>
+                      <Button className="bg-green-700 hover:bg-green-700/90" asChild>
                         <Link
                           href={
                             "https://www.google.com/maps/search/?api=1&query=" +

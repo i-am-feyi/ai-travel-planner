@@ -22,7 +22,6 @@ export default function RootLayout({
     <ClerkProviderWrapper>
       <html lang="en">
         <link rel="icon" href="/logo/icon-green.svg" sizes="any" />
-
         <body className={`${bricolageGrotesque.className} antialiased`}>
           <GlobalProvidersWrapper>
             {children}
