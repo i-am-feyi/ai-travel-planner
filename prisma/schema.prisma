@@ -72,7 +72,7 @@ model Hotel {
   address                String
   description            String
   estimatedPricePerNight Float
-  rating                 Float?
+  rating                 Float   @default(0)
   latitude               Float
   longitude              Float
   imageUrl               String?
@@ -105,7 +105,7 @@ model ItineraryActivity {
   latitude            Float
   longitude           Float
   ticketPrice         Float
-  rating              Float?
+  rating              Float   @default(0)
   timeOfDay           String // morning, afternoon, evening
   estimatedTravelTime Int
 
