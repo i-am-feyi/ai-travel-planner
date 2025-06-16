@@ -156,7 +156,7 @@ const ViewTripRoute = (props: { params: Params }) => {
                       💰 {formatCurrency(hotel.estimatedPricePerNight)} est. per night
                     </p>
                     <div className="flex items-center gap-1">
-                      <RatingStars rating={hotel.rating} />
+                      <RatingStars rating={hotel.rating || 0} />
                       <span className="text-muted-foreground text-sm">
                         ({hotel.rating} rating)
                       </span>
