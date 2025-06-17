@@ -9,8 +9,8 @@ const bricolageGrotesque = Bricolage_Grotesque({
 });
 
 export const metadata: Metadata = {
-  title: "AI Travel Planner",
-  description: "AI Travel Planner",
+  title: "Talia.ai",
+  description: "Talia.ai - Your AI Travel Planner",
 };
 
 export default function RootLayout({
