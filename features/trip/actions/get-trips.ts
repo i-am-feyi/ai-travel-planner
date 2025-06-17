@@ -48,6 +48,5 @@ export const getTrips = async () => {
     },
   });
 
-  console.log(trips);
   return trips;
 };
