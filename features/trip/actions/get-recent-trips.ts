@@ -7,7 +7,7 @@ export const getRecentTrips = async () => {
     orderBy: {
       createdAt: "desc",
     },
-    take: 4,
+    take: 8,
     select: {
       id: true,
       title: true,

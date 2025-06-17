@@ -43,6 +43,9 @@ export const getTrips = async () => {
         },
       },
     },
+    orderBy: {
+      createdAt: "desc",
+    },
   });
 
   console.log(trips);
