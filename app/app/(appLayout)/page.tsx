@@ -1,5 +1,3 @@
-"use client";
-
 import { Badge } from "@/components/ui/badge";
 import { Card } from "@/components/ui/card";
 import {
@@ -13,42 +11,28 @@ import { Calendar, MapPin } from "lucide-react";
 import { Sparkles } from "lucide-react";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
-import { useGetTrips } from "@/features/trip/api/use-get-trips-query";
 import { formatCurrency } from "@/lib/utils";
 import { formatDistanceToNow } from "date-fns";
 import Link from "next/link";
+import { getTrips } from "@/features/trip/actions/get-trips";
 
-const AppPage = () => {
-  const { data: trips, isLoading } = useGetTrips();
-
-  if (isLoading)
-    return <div className="min-h-dvh flex items-center justify-center">Loading...</div>;
-
-  if (trips?.length === 0 || !trips)
-    return (
-      <div className="min-h-dvh flex items-center justify-center">No trips found</div>
-    );
+const AppPage = async () => {
+  const trips = await getTrips();
 
   return (
     <section className="min-h-dvh">
       <div className="container mx-auto px-3 pt-10 mb-20">
         <h1 className="text-3xl font-semibold">My Trips</h1>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 mt-8">
-          {trips.map(
-            (trip: {
-              location: string;
-              id: string;
-              createdAt: string;
-              title: string;
-              travelGroup: string;
-              style: string;
-              duration: number;
-              estimatedTotal: number;
-              tripImages: {
-                id: string;
-                ImageUrl: string;
-              }[];
-            }) => (
+        {trips.length === 0 ? (
+          <div className="flex flex-col gap-4 items-center justify-center min-h-[50vh] mt-10">
+            <p className="text-gray-500 text-center">No trips found</p>
+            <Button asChild>
+              <Link href="/app/create-trip">Create a new trip</Link>
+            </Button>
+          </div>
+        ) : (
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 mt-8">
+            {trips.map((trip) => (
               <Card className="p-0 m-0 overflow-hidden gap-3 shadow-xs" key={trip.id}>
                 <div className="relative">
                   <Carousel className="w-full">
@@ -123,9 +107,9 @@ const AppPage = () => {
                   </div>
                 </div>
               </Card>
-            )
-          )}
-        </div>
+            ))}
+          </div>
+        )}
       </div>
     </section>
   );
