@@ -20,6 +20,7 @@ interface CreateTripState {
   formData: FormSchema;
   isSubmitted: boolean;
   setIsSubmitted: (isSubmitted: boolean) => void;
+  resetStore: () => void;
 }
 
 export const useCreateTripStore = create<CreateTripState>((set) => ({
@@ -36,4 +37,17 @@ export const useCreateTripStore = create<CreateTripState>((set) => ({
   },
   isSubmitted: false,
   setIsSubmitted: (isSubmitted) => set({ isSubmitted }),
+  resetStore: () =>
+    set({
+      currentStep: 1,
+      formData: {
+        destination: "",
+        groupType: "1 person",
+        duration: 3,
+        travelStyle: "Adventure",
+        interests: [],
+        budget: "Cheap",
+      },
+      isSubmitted: false,
+    }),
 }));

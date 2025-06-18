@@ -6,9 +6,11 @@ import { useCreateTripStore } from "../../stores/create-trip-store";
 import { ArrowLeft, ArrowRight, Wand } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { useCreateTripAPI } from "@/features/trip/api/use-create-trip-query";
+import { useEffect } from "react";
 
 const CreateTripForm = () => {
   const { mutate: createTrip, isPending } = useCreateTripAPI();
+  const { resetStore } = useCreateTripStore();
 
   const methods = useForm<FormSchema>({
     resolver: zodResolver(formSchema),
@@ -24,6 +26,7 @@ const CreateTripForm = () => {
   });
 
   const { currentStep, setCurrentStep, steps, setIsSubmitted } = useCreateTripStore();
+
   const isLast = currentStep === steps.length;
   const budget = methods.watch("budget");
 
@@ -56,6 +59,10 @@ const CreateTripForm = () => {
       travelStyle: data.travelStyle,
     });
   });
+
+  useEffect(() => {
+    resetStore();
+  }, []);
 
   return (
     <FormProvider {...methods}>

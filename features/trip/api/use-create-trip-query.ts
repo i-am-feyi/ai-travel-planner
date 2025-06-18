@@ -4,6 +4,7 @@ import { useMutation, useQueryClient } from "@tanstack/react-query";
 
 import { client } from "@/lib/hono";
 import { useRouter } from "next/navigation";
+import { useCreateTripStore } from "../stores/create-trip-store";
 
 type ResponseType = InferResponseType<typeof client.api.trip.$post, 200>;
 type RequestType = InferRequestType<typeof client.api.trip.$post>["json"];
@@ -11,6 +12,7 @@ type RequestType = InferRequestType<typeof client.api.trip.$post>["json"];
 export const useCreateTripAPI = () => {
   const queryClient = useQueryClient();
   const router = useRouter();
+  const { resetStore, setIsSubmitted } = useCreateTripStore();
 
   const mutation = useMutation<ResponseType, Error, RequestType>({
     mutationFn: async (json) => {
@@ -30,6 +32,7 @@ export const useCreateTripAPI = () => {
       toast.dismiss(context?.toastId);
       toast.success("Trip created successfully!");
       queryClient.invalidateQueries({ queryKey: ["trips"] });
+      resetStore();
       router.push(`/app/view-trip/${data.tripId}`);
     },
     onError: (error, variables, context: any) => {
@@ -38,6 +41,7 @@ export const useCreateTripAPI = () => {
     },
     onSettled: (data, error, variables, context: any) => {
       toast.dismiss(context?.toastId);
+      setIsSubmitted(false);
     },
   });
 
