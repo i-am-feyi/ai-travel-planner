@@ -8,6 +8,7 @@ import { fetchGoogleImagesForHotelsAndActivities } from "@/features/trip/utils/g
 import { EnrichedTripData } from "@/features/trip/schema/create-trip-api-schema";
 import { prisma } from "@/lib/prisma";
 import { getUserByClerkId } from "@/features/users/api/actions";
+import { revalidatePath } from "next/cache";
 
 const TripInputSchema = z.object({
   location: z.string(),
@@ -140,6 +141,8 @@ const app = new Hono()
     }
 
     const tripId = saveTripToDB.id;
+
+    revalidatePath("/");
 
     const finalRes = { success: true, tripId };
 

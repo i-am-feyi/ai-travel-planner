@@ -32,8 +32,8 @@ export const useCreateTripAPI = () => {
       toast.dismiss(context?.toastId);
       toast.success("Trip created successfully!");
       queryClient.invalidateQueries({ queryKey: ["trips"] });
-      resetStore();
       router.push(`/app/view-trip/${data.tripId}`);
+      resetStore();
     },
     onError: (error, variables, context: any) => {
       toast.dismiss(context?.toastId);
